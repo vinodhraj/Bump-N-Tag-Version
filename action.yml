@@ -1,6 +1,10 @@
 # action.yml
 name: 'Bump-N-Tag Version'
 description: 'Increment version and tag them'
+author: 'Vinodh Raj'
+branding:
+  icon: 'git-commit'
+  color: 'red'
 inputs:
   file_name:  # id of input
     description: 'Name of the version file'
