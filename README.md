@@ -1,5 +1,5 @@
 # Bump-N-Tag Version
-GitHub Action program to handle application version file like auto-increment of version number.
+GitHub Action program to handle application version file like auto-increment of version number based on GitHub events. This action program supports "push" and "pull-request" events.
 
 ## Inputs
 
@@ -25,17 +25,11 @@ VERSION 1.2.4.55
 ```
 
 
-## Outputs
-
-### `app_version`
-
-Output parameter to access Updated version.
-
 ## Example usage
 
 ```
 name: App Version Actions
-on: [push]
+on: [push, pull_request]  # Recommended to use either of one event
 
 jobs:
   Version-check:
